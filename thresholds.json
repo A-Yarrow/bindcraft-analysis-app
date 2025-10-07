@@ -1,0 +1,114 @@
+{
+  "rosetta_metrics": {
+    "Average_dSASA": {
+      "min": 600,
+      "thresh": 800,
+      "max": 2000,
+      "step": 50,
+      ">=": true,
+      "description": "Buried surface area at the interface. >800 Å² indicates strong binding."
+    },
+    "Average_ShapeComplementarity": {
+      "min": 0.4,
+      "thresh": 0.6,
+      "max": 1.0,
+      "step": 0.01,
+      ">=": true,
+      "description": "Interface packing quality. >0.6 is generally good."
+    },
+    "Average_dG": {
+      "min": -30,
+      "thresh": -10,
+      "max": -5,
+      "step": 1,
+      ">=": false,
+      "description": "Binding free energy (kcal/mol). < -10 kcal/mol suggests favorable binding."
+    },
+    "Average_n_InterfaceHbonds": {
+      "min": 0,
+      "thresh": 5,
+      "max": 20,
+      "step": 1,
+      ">=": true,
+      "description": "Number of hydrogen bonds at the interface. More is better."
+    },
+    "Average_Hotspot_RMSD": {
+      "min": 0.0,
+      "thresh": 2.0,
+      "max": 5.0,
+      "step": 0.1,
+      ">=": false,
+      "description": "RMSD of hotspot residues. < 2 Å indicates good alignment."
+    },
+    "Average_Relaxed_Clashes": {
+      "min": 0,
+      "thresh": 0,
+      "max": 50,
+      "step": 1,
+      ">=": false,
+      "description": "Steric clashes (relaxed/unrelaxed). Should be near zero."
+    },
+    "Average_PackStat": {
+      "min": 0.0,
+      "thresh": 0.5,
+      "max": 1.0,
+      "step": 0.01,
+      ">=": true,
+      "description": "Packing quality score. >0.5 suggests proper side-chain packing."
+    }
+  },
+  "af2_metrics": {
+    "Average_pLDDT": {
+      "min": 0.7,
+      "thresh": 0.9,
+      "max": 1.00,
+      "step": 0.01,
+      ">=": true,
+      "description": "Per-residue confidence score. >0.9 is very reliable."
+    },
+    "Average_i_pLDDT": {
+      "min": 0.70,
+      "thresh": 0.80,
+      "max": 1.00,
+      "step": 0.01,
+      ">=": true,
+      "description": "Interface residue confidence score. >0.8 reliable."
+    },
+    "Average_Binder_pLDDT": {
+      "min": 0.0,
+      "thresh": 0.9,
+      "max": 1.0,
+      "step": 0.01,
+      ">=": true,
+      "description": "Binder residue confidence score. >0.9 very reliable."
+    },
+    
+    "Average_i_pAE": {
+      "min": 0.0,
+      "thresh": 0.30,
+      "max": 1.0,
+      "step": 0.01,
+      ">=": false,
+      "description": "Interface-specific pAE (normalized). Lower is better; ≤ 3 Å raw."
+    },
+    
+    "Average_pAE": {
+    "min": 0.0,
+    "thresh": 0.5,
+    "max": 1.0,
+    "step": 0.01,
+    ">=": false,
+    "description": "Predicted Alignment Error (normalized). Lower is better; ≤5 Å raw."
+    },
+    
+    "Average_pTM": {
+      "min": 0.0,
+      "thresh": 0.7,
+      "max": 1.0,
+      "step": 0.01,
+      ">=": true,
+      "description": "Predicted TM-score. >0.7 suggests reliable global fold."
+    }
+  }
+}
+
