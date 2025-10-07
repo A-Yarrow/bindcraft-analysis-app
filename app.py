@@ -104,6 +104,18 @@ final_designs_csv = st.sidebar.file_uploader("Upload final_design_stats.csv", ty
 if final_designs_csv:
     df = parse_final_design_stats(final_designs_csv)
     df_metrics = get_metrics(df, metric_type='top_metrics')
+    if df_metrics.empty:
+        st.markdown(
+            """
+            <div style="background-color:#f8d7da; color:#721c24; padding:10px; border-radius:5px;">
+                ❌ No metrics found. Please check the uploaded CSV file.<br>
+                Ensure it is labeled final_design_stats.csv.
+            </div>
+            """,
+        unsafe_allow_html=True
+        )
+
+
     st.subheader("Final Design Stats")
     st.dataframe(df_metrics)
               

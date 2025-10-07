@@ -141,9 +141,13 @@ def parse_final_design_stats(results_file):
     return df
 
 def get_metrics(df:pd.DataFrame, metric_type:str) -> pd.DataFrame:
-    metrics = SETTINGS[metric_type]
-    df = df[['Rank', 'Design'] + metrics ]
-    return df
+    try:
+        metrics = SETTINGS[metric_type]
+        df = df[['Rank', 'Design'] + metrics ]
+        return df
+    except KeyError:
+        st.error(f"Metric type '{metric_type}' not found in settings.")
+        return pd.DataFrame()
 
 
 
