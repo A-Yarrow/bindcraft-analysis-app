@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository hosts the `bindcraft-analysis-app`, a Streamlit dashboard designed to provide an intuitive and interactive platform for analyzing output from [BindCraft](https://github.com/martinpacesa/BindCraft) runs. Users can easily upload their Protein Data Bank (PDB) files to visualize the binding interface, explore detailed statistics, and apply various filters and sorting options to gain deeper insights into their protein-ligand interactions.
+This repository hosts the `bindcraft-analysis-app`, a Streamlit dashboard designed to provide an intuitive and interactive platform for analyzing output from [BindCraft](https://github.com/martinpacesa/BindCraft) runs. Users can easily upload their Protein Data Bank (PDB) files to visualize the binding interface, explore detailed statistics, and apply various filters and sorting options to gain deeper insights into their protein-Binder interactions.
 
 BindCraft is an open-source and automated pipeline for *de novo* protein binder design, utilizing advanced techniques such as AlphaFold2 backpropagation, MPNN, and PyRosetta [1, 2]. This analysis app aims to make the results of such powerful computational design more accessible and interpretable for researchers.
 
@@ -24,7 +24,7 @@ This application is hosted on Streamlit Cloud, providing easy access without any
 
 To utilize this analysis app, you first need to generate output from BindCraft. The original BindCraft software repository can be found here: [https://github.com/martinpacesa/BindCraft](https://github.com/martinpacesa/BindCraft).
 
-For users looking for a streamlined setup to run BindCraft, especially on cloud platforms, we recommend the following repository:
+For users looking for a streamlined setup to run BindCraft, especially on cloud platforms, I recommend the following repository:
 
 *   **BindCraft on RunPod Cloud**: [https://github.com/A-Yarrow/bindcraft-runpod](https://github.com/A-Yarrow/bindcraft-runpod)
 
@@ -32,7 +32,7 @@ This repository provides a full setup for running BindCraft on RunPod. After gen
 
 ## Contribution
 
-This project is open source and built for the community. We encourage contributions from developers, researchers, and anyone interested in improving protein binder analysis. Whether it's bug fixes, new features, or documentation improvements, your input is highly valued. Please refer to the `CONTRIBUTING.md` file (to be added) for guidelines on how to contribute.
+This project is open source and built for the community. I encourage contributions from developers, researchers, and anyone interested in improving protein binder analysis. Whether it's bug fixes, new features, or documentation improvements, your input is highly valued. Please refer to the `CONTRIBUTING.md` file (to be added) for guidelines on how to contribute.
 
 ## References
 
